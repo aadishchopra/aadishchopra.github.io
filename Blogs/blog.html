@@ -5,13 +5,30 @@
 PowerShell Tips and Tricks
 </title>
 </head>
-<p>
 <ul style="list-style-type:disc;">
-  <li>How to automate excel</li>
-  <li>How to configure robots/machines</li>
+  <li><a href="#AutomateExcel">How to process excel macros using powershell</a></li>
+  <li>How to configure robots or machines</li>
   <li>Upload to SharePoint without Sharepoint Shell</li>
 </ul>
+<a name="AutomateExcel"></a> 
+<p>
+Few things I like about PowerShell.Note for readers.<b>PS means PowerShell and I am using PowerShell v3.0 so it should work on version v3.0 and above</b>
 </p>
-
+<ol type="1">
+  <li><h4>Parameters can be passed at run time</h4></li>
+  <p>This means reproducibility. It is similar to the concept of a global variable.These parameters are declared at the top of the script.
+  Below is an example. In the example we have parameters like environment,server,no of files to process,extension of the files to process. 
+  Environment can be development, testing or production or any other depending what terminology is used in your organization. If environment is dev 
+  somewhere in the code you can have a if-else logic where if it is production it is directly deployed on the server.</p>
+  <b>param(</b>
+  <br>[string]$env="dev"</br>
+  <br>[int]$server="10.0.0.1"</br>
+  <br>[int]$files="100"</br>
+  <br>[String]$extension=".pdf"</br>
+  <br>}</br>
+  <li>PS Modules</li>
+  
+  <li>.NET framework</li>
+</ol>
 </body>
 
