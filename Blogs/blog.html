@@ -31,6 +31,23 @@ processFiles(argument1,argument2,...argument n)
 Rest of the code here
 <br>}</br>
 <li>PS Modules</li>
+PowerShell is a great improvement over Command Line Interface. Some of the modules that are worth mentioning including their<br>
+details. 
+<ol type="a">
+  <li>Get-ChildItem</li>
+  This has several switches like the recurse, include, filter, exclude argument. For example if you want to get the contents of a <br>
+  folder but you only want csv files. </br>
+  
+  Get-ChildItem -Path "path to your folder" -Recurse -Filter ".csv"
+<li>Sort-Object</li>
+<li>Export-CSV</li>
+Export-CSV is a very helpful cmdlet (yes these modules are called cmdlet in powershell). You can export objects too ! I will explain <br>
+.Net Objects in a while. Another thing that I like with this cmdlet is appending to an existing document.</br>
+
+Export-CSV -Path "your path" 
+</ol>  
+
+<li>Piping and other associated keywords in PowerShell</li>
 <li>.NET framework</li>
 </ol>
 </body>
